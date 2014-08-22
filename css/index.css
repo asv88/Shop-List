@@ -1,15 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+	background-image: url(../images/DSCN5865.jpg);
+	background-size: 1490px;
+	margin: 0;
+	padding: 0;
+}
+
 .container {
 	margin: auto auto;
-	max-width: 975px;
+	height: 1100px;
+	background-color: rgba(255,255,255, .3);
 }
 
 .list {
 	width: 50%;
 	float: left;
 	margin: 30px;
-	background-color:rgba(244,244,244,1);
+	background-color:rgba(244,244,244, .7);
 	border-radius: 10px;
 	padding: 20px 20px 20px 20px;
 }
@@ -19,13 +27,14 @@ h3 {
 	background-color: rgba(176,231,206,1);
 	color: rgba(255,255,255,1);
 	box-shadow: rgba(224,224,224,1) 1px 1px 5px;
-	font-size: 2em;
+	font-size: 2.2em;
 	font-weight: bold;
 	text-shadow: rgba(153,153,153,1) 0px 0px 2px;
 	padding: 20px;
 	margin-top: 0px;
 	border-radius: 10px;
 	text-align: center;
+	font-family: 'Indie Flower', cursive;
 }
 .listwrap {
 	width: 90%;
@@ -49,14 +58,25 @@ h3 {
 	width: 60%;
 	float: left;
 	font-size: 1.5em;
-	color: rgba(153,153,153,1);
+	color: rgba(153,153,153, 1);
 	margin: 10px 0 10px 0px;
+	font-family: 'Cuprum', sans-serif;
 }
-.checkmark {
+.unchecked {
 	text-align: center;
-	width: 35px;
+	width: auto;
+	height: auto;
 	float: left;
 	margin: 0px;
+	display: block;
+}
+.checked {
+	text-align: center;
+	width: auto;
+	height: auto;
+	float: left;
+	margin: 0px;
+	display: none;
 }
 /*rgba(176,231,206,1) = green */
 
@@ -75,6 +95,7 @@ h3 {
 	margin: 0px;
 	padding: 5px;
 	display: block;
+	font-family: 'Cuprum', sans-serif;
 }
 .checked p {
 	background-color: rgba(176,231,206,1);
@@ -90,6 +111,7 @@ h3 {
 	font-size: 26px;
 	margin: 0px;
 	padding: 5px;
+	font-family: 'Cuprum', sans-serif;
 }
 .delete {
 	text-align: center;
@@ -108,15 +130,26 @@ h3 {
 	color: rgba(255,187,77,1);
 	margin: 0px;
 	padding: 5px;
+	font-family: 'Cuprum', sans-serif;
 }
 .delete p:active  {
+	width: 26px;
+	height: 26px;
+	border: solid 5px rgba(255,187,77,1);
+	box-shadow: rgba(224,224,224,1) 1px 1px 5px;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 26px;
+	margin: 0px;
+	padding: 5px;
 	background-color: rgba(255,187,77,1);
 	color: rgba(255,255,255,1);
+	font-family: 'Cuprum', sans-serif;
 }
 
 .Adding {
 	width: 30%;
-	background-color: rgba(244,244,244,1);
+	background-color: rgba(244,244,244, .7);
 	border-radius: 10px;
 	border: none;
 	float: right;
@@ -132,9 +165,11 @@ h3 {
   box-shadow: inset 0 1px 1px rgba(224,224,224,1);
   border-radius: 10px;
   color: rgba(102,102,102,1);
-  padding: 10px;
+  padding: 15px;
   float: left;
-  width: 200px;
+  width: 250px;
+  font-size: 1em;
+  font-family: 'Cuprum', sans-serif;
   
 }
 .Adding .addItem .btn {
@@ -147,5 +182,26 @@ h3 {
 	border: none;
 	width: 150px;
 	margin-top: 15px;
+	font-family: 'Indie Flower', cursive;
 	clear: both;
+}
+.directions {
+	background-color: rgba(255,255,255,1);
+	margin: 10px 20px 20px 20px;
+	border-radius: 10px;
+	padding: 20px;
+}
+.directions h4 {
+	line-height: 120%;
+	margin-top: 10px;
+	font-size: 1.5em;
+	font-family: 'Indie Flower', cursive;
+}
+.directions p {
+	line-height: 130%;
+	font-size: 1.15em;
+	font-family: 'Cuprum', sans-serif;
+}
+.directions p, .directions h4 {
+	color: rgba(153,153,153,1);
 }

@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>Shopping List</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <link href="css/index.css" type="text/css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower|Cuprum' rel='stylesheet' type='text/css'>
 <script src="js/application.js"></script>
 </head>
 
@@ -12,35 +14,8 @@
 	<div class="container">
        <section class="list">     
         	<h3>Shopping List</h3>
-            <ul class="listwrap">
-            	<li class="listItem">
-                	<div class="unchecked">
-			            <p></p>
-			        </div>
-                	<p>Strawberries</p>
-                	<div class="delete">
-			            <p>X</p>
-			        </div>
-                </li>
-                <li class="listItem">
-                	<div class="unchecked">
-			            <p></p>
-			        </div>
-                	<p>Bananas</p>
-                	<div class="delete">
-			            <p>X</p>
-			        </div>
-                 </li>
-                <li class="listItem">
-                	<div class="checked">
-			            <p>&#10003 </p>
-			        </div>
-                	<p>Apples</p>
-                	<div class="delete">
-			            <p>X</p>
-			        </div>
-                </li>
-		    </ul>
+            <ul class="listwrap" id="sortable">
+            </ul>
         </section>
        
         <aside class="Adding">
@@ -51,6 +26,13 @@
  				</fieldset>
             	              
         	</form>
+            <div class="directions">
+	            <h4>Directions:</h4>
+    	        <p>Enter as many list items desired.</p>
+        	    <p>Feel free to click and drag to re-order items.</p>
+            	<p>Check the items that are bought!</p>
+            	<p>Or delete items that are no longer needed!</p>
+            </div>
         </aside>
         
     </div>
