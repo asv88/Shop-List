@@ -5,10 +5,13 @@ $(document).ready(function () {
     $( "#sortable" ).sortable();
     $( "#sortable" ).disableSelection();
   });
+//added re-arranging function
 
 	$('.Adding').submit(function (e) {
 		e.preventDefault();
 	});
+	//prevents reloading of page when clicking the submit button
+	
 	//Places content from search input into listItem
 	$(".Adding").on("click", ".btn", function () {
 		//gets value of input field
